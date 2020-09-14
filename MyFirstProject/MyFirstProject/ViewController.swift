@@ -14,7 +14,15 @@ UIView: UIResponder
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, CalculatorViewDelegate {
+    func multiply(x: Int, by y: Int) {
+        print(x * y)
+    }
+    
+    func sum(x: Int, with y: Int) {
+        print(x + y)
+    }
+    
     
     @IBOutlet var helloLabel: UILabel!
     @IBOutlet var button: UIButton!
@@ -36,6 +44,17 @@ class ViewController: UIViewController {
         someView = newView
         
         view.addSubview(someView)
+        
+//        let calculatorView = CalculatorView(frame: CGRect(x: 20, y: 300, width: 340, height: 120))
+//        view.addSubview(calculatorView)
+//        calculatorView.delegate = self
+        
+        let calculatorView = UINib(nibName: "Calculator2", bundle: nil).instantiate(withOwner: nil, options: nil)[0]
+        if let calculatorView = calculatorView as? Calculator2View {
+            view.addSubview(calculatorView)
+            calculatorView.frame.origin = CGPoint(x: 20, y: 300)
+            calculatorView.delegate = self
+        }
     }
     
     @objc func buttonTap() {
