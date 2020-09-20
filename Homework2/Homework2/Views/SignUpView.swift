@@ -11,7 +11,7 @@ import UIKit
 class SignUpView: UIView {
     weak var delegate: SignInDelegate?
     
-    var headerLabel: UILabel = {
+    private let headerLabel: UILabel = {
        let label = UILabel()
         label.text = "Already signed up?"
         label.textColor = UIColor.white
@@ -19,41 +19,41 @@ class SignUpView: UIView {
        return label
     } ()
     
-    var headerView: UIView = {
+    private let headerView: UIView = {
         let view = UIView()
         view.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 150)
         view.backgroundColor = UIColor.lightGray
         return view
     } ()
     
-    var loginTextField: UITextField = {
+    private let loginTextField: UITextField = {
         let textField = UITextField()
         textField.frame = CGRect(x: UIScreen.main.bounds.width * 0.25, y: 200, width: UIScreen.main.bounds.width * 0.5, height: 40)
-        textField.borderStyle = .line
+        textField.borderStyle = .roundedRect
         textField.placeholder = "login"
         textField.autocapitalizationType = .none
         return textField
     } ()
     
-    var passwordTextField: UITextField = {
+    private let passwordTextField: UITextField = {
         let textField = UITextField()
         textField.frame = CGRect(x: UIScreen.main.bounds.width * 0.25, y: 250, width: UIScreen.main.bounds.width * 0.5, height: 40)
-        textField.borderStyle = .line
+        textField.borderStyle = .roundedRect
         textField.placeholder = "password"
         textField.isSecureTextEntry = true
         return textField
     } ()
     
-    var confirmPasswordTextField: UITextField = {
+    private let confirmPasswordTextField: UITextField = {
         let textField = UITextField()
         textField.frame = CGRect(x: UIScreen.main.bounds.width * 0.25, y: 300, width: UIScreen.main.bounds.width * 0.5, height: 40)
-        textField.borderStyle = .line
+        textField.borderStyle = .roundedRect
         textField.placeholder = "confirm password"
         textField.isSecureTextEntry = true
         return textField
     } ()
     
-    var signUpButton: UIButton = {
+    private let signUpButton: UIButton = {
        let button = UIButton()
         button.frame = CGRect(x: UIScreen.main.bounds.width * 0.5 - 100, y: 350, width: 100, height: 60)
         button.backgroundColor = UIColor.systemPurple

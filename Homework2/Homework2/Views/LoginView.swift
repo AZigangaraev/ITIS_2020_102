@@ -18,7 +18,7 @@ class LoginView: UIView {
     
     weak var delegate: SignInDelegate?
     
-    var headerLabel: UILabel = {
+    private let headerLabel: UILabel = {
        let label = UILabel()
         label.text = "Need to sign in to continue"
         label.textColor = UIColor.white
@@ -26,32 +26,32 @@ class LoginView: UIView {
        return label
     } ()
     
-    var headerView: UIView = {
+    private let headerView: UIView = {
         let view = UIView()
         view.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 150)
         view.backgroundColor = UIColor.lightGray
         return view
     } ()
     
-    var loginTextField: UITextField = {
+    private let loginTextField: UITextField = {
         let textField = UITextField()
         textField.frame = CGRect(x: UIScreen.main.bounds.width * 0.25, y: 200, width: UIScreen.main.bounds.width * 0.5, height: 40)
-        textField.borderStyle = .line
+        textField.borderStyle = .roundedRect
         textField.placeholder = "login"
         textField.autocapitalizationType = .none
         return textField
     } ()
     
-    var passwordTextField: UITextField = {
+    private let passwordTextField: UITextField = {
         let textField = UITextField()
         textField.frame = CGRect(x: UIScreen.main.bounds.width * 0.25, y: 250, width: UIScreen.main.bounds.width * 0.5, height: 40)
-        textField.borderStyle = .line
+        textField.borderStyle = .roundedRect
         textField.placeholder = "password"
         textField.isSecureTextEntry = true
         return textField
     } ()
     
-    var loginButton: UIButton = {
+    private let loginButton: UIButton = {
         let button = UIButton()
         button.frame = CGRect(x: UIScreen.main.bounds.width * 0.5 + 10, y: 300, width: 100, height: 60)
         button.backgroundColor = UIColor.red
@@ -61,7 +61,7 @@ class LoginView: UIView {
         return button
     } ()
     
-    var signUpButton: UIButton = {
+    private let signUpButton: UIButton = {
        let button = UIButton()
         button.frame = CGRect(x: UIScreen.main.bounds.width * 0.5 - 100, y: 300, width: 100, height: 60)
         button.backgroundColor = UIColor.systemPurple
@@ -81,12 +81,12 @@ class LoginView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func setupStyle() {
+    private func setupStyle() {
         backgroundColor = UIColor.systemYellow
         addSubviews()
     }
     
-    func addSubviews() {
+    private func addSubviews() {
         addSubview(headerView)
         addSubview(loginTextField)
         addSubview(passwordTextField)

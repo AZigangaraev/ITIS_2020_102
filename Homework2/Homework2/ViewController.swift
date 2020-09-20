@@ -9,9 +9,9 @@
 import UIKit
 
 class ViewController: UIViewController {
-    var loginCustomView: LoginView = LoginView()
+    private let loginCustomView: LoginView = LoginView()
     
-    var dictionary: [String: String] = ["admin" : "admin", "qwerty" : "qwerty"]
+    private var dictionary: [String: String] = ["admin" : "admin", "qwerty" : "qwerty"]
 
     override func loadView() {
         view = loginCustomView
