@@ -11,7 +11,6 @@ import UIKit
 protocol SignInDelegate: AnyObject {
     func login(login: String, password: String)
     func signUp()
-    func addNewPerson(login: String, password: String)
 }
 
 class LoginView: UIView {
@@ -118,6 +117,10 @@ class LoginView: UIView {
             headerView.backgroundColor = UIColor.red
             headerLabel.text = "Sign in failed"
         }
+    }
+    
+    func resetHeaderView() {
+        headerView.backgroundColor = UIColor.lightGray
     }
     
 }

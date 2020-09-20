@@ -8,8 +8,14 @@
 
 import UIKit
 
+protocol SignUpDelegate: AnyObject {
+    func goToLoginView()
+    func addNewPerson(login: String, password: String)
+}
+
 class SignUpView: UIView {
-    weak var delegate: SignInDelegate?
+    
+    weak var delegate: SignUpDelegate?
     
     private let headerLabel: UILabel = {
        let label = UILabel()
@@ -63,6 +69,16 @@ class SignUpView: UIView {
        return button
     } ()
     
+    private let signInButton: UIButton = {
+       let button = UIButton()
+        button.frame = CGRect(x: UIScreen.main.bounds.width * 0.5 - 100, y: 100, width: 100, height: 40)
+        button.backgroundColor = UIColor.systemPurple
+        button.setTitle("Sign In", for: .normal)
+        button.layer.cornerRadius = 10
+        button.addTarget(self, action: #selector(signInButtonClicked), for: .touchUpInside)
+       return button
+    } ()
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupStyle()
@@ -84,10 +100,10 @@ class SignUpView: UIView {
         addSubview(passwordTextField)
         addSubview(confirmPasswordTextField)
         addSubview(signUpButton)
+        addSubview(signInButton)
     }
     
     @objc private func signUpButtonClicked() {
-        
         guard
             let login = loginTextField.text,
             let password = passwordTextField.text,
@@ -102,5 +118,9 @@ class SignUpView: UIView {
         } else {
             print("Пароли не совпадают...")
         }
+    }
+    
+    @objc private func signInButtonClicked() {
+        delegate?.goToLoginView()
     }
 }
