@@ -25,6 +25,9 @@
 		23BE4D42250FDCCD000105F4 /* Caclulator2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BE4D41250FDCCD000105F4 /* Caclulator2.swift */; };
 		23BE4D44250FE1DA000105F4 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23BE4D43250FE1DA000105F4 /* Storyboard.storyboard */; };
 		23BE4D46250FE419000105F4 /* HomeWorkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BE4D45250FE419000105F4 /* HomeWorkController.swift */; };
+		7C0497F92517A3BA00472BD7 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0497F82517A3BA00472BD7 /* LoginView.swift */; };
+		7C0497FF2517A41300472BD7 /* RegisterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C0497FE2517A41300472BD7 /* RegisterView.xib */; };
+		7C0498052517AB1200472BD7 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0498042517AB1200472BD7 /* RegisterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +53,9 @@
 		23BE4D41250FDCCD000105F4 /* Caclulator2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Caclulator2.swift; sourceTree = "<group>"; };
 		23BE4D43250FE1DA000105F4 /* Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		23BE4D45250FE419000105F4 /* HomeWorkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWorkController.swift; sourceTree = "<group>"; };
+		7C0497F82517A3BA00472BD7 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		7C0497FE2517A41300472BD7 /* RegisterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterView.xib; sourceTree = "<group>"; };
+		7C0498042517AB1200472BD7 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +124,9 @@
 				23BE4D31250FBEC9000105F4 /* Assets.xcassets */,
 				23BE4D33250FBEC9000105F4 /* LaunchScreen.storyboard */,
 				23BE4D36250FBEC9000105F4 /* Info.plist */,
+				7C0497F82517A3BA00472BD7 /* LoginView.swift */,
+				7C0498042517AB1200472BD7 /* RegisterView.swift */,
+				7C0497FE2517A41300472BD7 /* RegisterView.xib */,
 			);
 			path = MySecondProject;
 			sourceTree = "<group>";
@@ -166,7 +175,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1170;
-				LastUpgradeCheck = 1170;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "Amir Zigangaraev";
 				TargetAttributes = {
 					23BE4D0A250FBCED000105F4 = {
@@ -214,6 +223,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				23BE4D35250FBEC9000105F4 /* LaunchScreen.storyboard in Resources */,
+				7C0497FF2517A41300472BD7 /* RegisterView.xib in Resources */,
 				23BE4D32250FBEC9000105F4 /* Assets.xcassets in Resources */,
 				23BE4D30250FBEC8000105F4 /* Main.storyboard in Resources */,
 			);
@@ -241,7 +251,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				23BE4D2D250FBEC8000105F4 /* ViewController.swift in Sources */,
+				7C0498052517AB1200472BD7 /* RegisterView.swift in Sources */,
 				23BE4D29250FBEC8000105F4 /* AppDelegate.swift in Sources */,
+				7C0497F92517A3BA00472BD7 /* LoginView.swift in Sources */,
 				23BE4D2B250FBEC8000105F4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -310,6 +322,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -370,6 +383,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
