@@ -25,6 +25,14 @@
 		23BE4D42250FDCCD000105F4 /* Caclulator2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BE4D41250FDCCD000105F4 /* Caclulator2.swift */; };
 		23BE4D44250FE1DA000105F4 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23BE4D43250FE1DA000105F4 /* Storyboard.storyboard */; };
 		23BE4D46250FE419000105F4 /* HomeWorkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BE4D45250FE419000105F4 /* HomeWorkController.swift */; };
+		846E8504251781B400AF5E8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846E8503251781B400AF5E8C /* AppDelegate.swift */; };
+		846E8506251781B400AF5E8C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846E8505251781B400AF5E8C /* SceneDelegate.swift */; };
+		846E8508251781B400AF5E8C /* ViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846E8507251781B400AF5E8C /* ViewController1.swift */; };
+		846E850B251781B400AF5E8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 846E8509251781B400AF5E8C /* Main.storyboard */; };
+		846E850D251781BA00AF5E8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 846E850C251781BA00AF5E8C /* Assets.xcassets */; };
+		846E8510251781BA00AF5E8C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 846E850E251781BA00AF5E8C /* LaunchScreen.storyboard */; };
+		846E851E25178FCA00AF5E8C /* AuthorizationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846E851D25178FCA00AF5E8C /* AuthorizationView.swift */; };
+		848D05532517A142003D44EE /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848D05522517A142003D44EE /* RegistrationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +58,16 @@
 		23BE4D41250FDCCD000105F4 /* Caclulator2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Caclulator2.swift; sourceTree = "<group>"; };
 		23BE4D43250FE1DA000105F4 /* Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		23BE4D45250FE419000105F4 /* HomeWorkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWorkController.swift; sourceTree = "<group>"; };
+		846E8501251781B400AF5E8C /* Homework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homework.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		846E8503251781B400AF5E8C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		846E8505251781B400AF5E8C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		846E8507251781B400AF5E8C /* ViewController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController1.swift; sourceTree = "<group>"; };
+		846E850A251781B400AF5E8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		846E850C251781BA00AF5E8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		846E850F251781BA00AF5E8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		846E8511251781BA00AF5E8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		846E851D25178FCA00AF5E8C /* AuthorizationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationView.swift; sourceTree = "<group>"; };
+		848D05522517A142003D44EE /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +85,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		846E84FE251781B400AF5E8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -75,6 +100,7 @@
 			children = (
 				23BE4D0D250FBCED000105F4 /* MyFirstProject */,
 				23BE4D27250FBEC8000105F4 /* MySecondProject */,
+				846E8502251781B400AF5E8C /* Homework */,
 				23BE4D0C250FBCED000105F4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -84,6 +110,7 @@
 			children = (
 				23BE4D0B250FBCED000105F4 /* HelloWorld.app */,
 				23BE4D26250FBEC8000105F4 /* MySecondProject.app */,
+				846E8501251781B400AF5E8C /* Homework.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -120,6 +147,22 @@
 				23BE4D36250FBEC9000105F4 /* Info.plist */,
 			);
 			path = MySecondProject;
+			sourceTree = "<group>";
+		};
+		846E8502251781B400AF5E8C /* Homework */ = {
+			isa = PBXGroup;
+			children = (
+				846E8503251781B400AF5E8C /* AppDelegate.swift */,
+				846E8505251781B400AF5E8C /* SceneDelegate.swift */,
+				846E8507251781B400AF5E8C /* ViewController1.swift */,
+				848D05522517A142003D44EE /* RegistrationView.swift */,
+				846E851D25178FCA00AF5E8C /* AuthorizationView.swift */,
+				846E8509251781B400AF5E8C /* Main.storyboard */,
+				846E850C251781BA00AF5E8C /* Assets.xcassets */,
+				846E850E251781BA00AF5E8C /* LaunchScreen.storyboard */,
+				846E8511251781BA00AF5E8C /* Info.plist */,
+			);
+			path = Homework;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,13 +202,30 @@
 			productReference = 23BE4D26250FBEC8000105F4 /* MySecondProject.app */;
 			productType = "com.apple.product-type.application";
 		};
+		846E8500251781B400AF5E8C /* Homework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 846E8514251781BA00AF5E8C /* Build configuration list for PBXNativeTarget "Homework" */;
+			buildPhases = (
+				846E84FD251781B400AF5E8C /* Sources */,
+				846E84FE251781B400AF5E8C /* Frameworks */,
+				846E84FF251781B400AF5E8C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Homework;
+			productName = Homework;
+			productReference = 846E8501251781B400AF5E8C /* Homework.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		23BE4D03250FBCED000105F4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1170;
+				LastSwiftUpdateCheck = 1160;
 				LastUpgradeCheck = 1170;
 				ORGANIZATIONNAME = "Amir Zigangaraev";
 				TargetAttributes = {
@@ -174,6 +234,9 @@
 					};
 					23BE4D25250FBEC8000105F4 = {
 						CreatedOnToolsVersion = 11.7;
+					};
+					846E8500251781B400AF5E8C = {
+						CreatedOnToolsVersion = 11.6;
 					};
 				};
 			};
@@ -192,6 +255,7 @@
 			targets = (
 				23BE4D0A250FBCED000105F4 /* MyFirstProject */,
 				23BE4D25250FBEC8000105F4 /* MySecondProject */,
+				846E8500251781B400AF5E8C /* Homework */,
 			);
 		};
 /* End PBXProject section */
@@ -219,6 +283,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		846E84FF251781B400AF5E8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				846E8510251781BA00AF5E8C /* LaunchScreen.storyboard in Resources */,
+				846E850D251781BA00AF5E8C /* Assets.xcassets in Resources */,
+				846E850B251781B400AF5E8C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -243,6 +317,18 @@
 				23BE4D2D250FBEC8000105F4 /* ViewController.swift in Sources */,
 				23BE4D29250FBEC8000105F4 /* AppDelegate.swift in Sources */,
 				23BE4D2B250FBEC8000105F4 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		846E84FD251781B400AF5E8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				846E8508251781B400AF5E8C /* ViewController1.swift in Sources */,
+				846E8504251781B400AF5E8C /* AppDelegate.swift in Sources */,
+				848D05532517A142003D44EE /* RegistrationView.swift in Sources */,
+				846E851E25178FCA00AF5E8C /* AuthorizationView.swift in Sources */,
+				846E8506251781B400AF5E8C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +363,22 @@
 			isa = PBXVariantGroup;
 			children = (
 				23BE4D34250FBEC9000105F4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		846E8509251781B400AF5E8C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				846E850A251781B400AF5E8C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		846E850E251781BA00AF5E8C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				846E850F251781BA00AF5E8C /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -441,8 +543,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J62PVJ69GK;
+				DEVELOPMENT_TEAM = 2759MFHSM4;
 				INFOPLIST_FILE = MySecondProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -459,13 +562,52 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J62PVJ69GK;
+				DEVELOPMENT_TEAM = 2759MFHSM4;
 				INFOPLIST_FILE = MySecondProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = azigangaraev.github.io.MySecondProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		846E8512251781BA00AF5E8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2759MFHSM4;
+				INFOPLIST_FILE = Homework/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = projectapp.Homework;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		846E8513251781BA00AF5E8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2759MFHSM4;
+				INFOPLIST_FILE = Homework/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = projectapp.Homework;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -498,6 +640,15 @@
 			buildConfigurations = (
 				23BE4D38250FBEC9000105F4 /* Debug */,
 				23BE4D39250FBEC9000105F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		846E8514251781BA00AF5E8C /* Build configuration list for PBXNativeTarget "Homework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				846E8512251781BA00AF5E8C /* Debug */,
+				846E8513251781BA00AF5E8C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
