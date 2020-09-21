@@ -21,6 +21,7 @@ class SignUpView: UIView {
        let label = UILabel()
         label.text = "Already signed up?"
         label.textColor = UIColor.white
+        label.font = .boldSystemFont(ofSize: 20)
         label.frame = CGRect(x: 50, y: 60, width: UIScreen.main.bounds.width, height: 30)
        return label
     } ()
@@ -72,7 +73,7 @@ class SignUpView: UIView {
     private let signInButton: UIButton = {
        let button = UIButton()
         button.frame = CGRect(x: UIScreen.main.bounds.width * 0.5 - 100, y: 100, width: 100, height: 40)
-        button.backgroundColor = UIColor.systemPurple
+        button.backgroundColor = UIColor.blue
         button.setTitle("Sign In", for: .normal)
         button.layer.cornerRadius = 10
         button.addTarget(self, action: #selector(signInButtonClicked), for: .touchUpInside)
@@ -89,7 +90,7 @@ class SignUpView: UIView {
     }
     
     private func setupStyle() {
-        backgroundColor = UIColor.systemBlue
+        backgroundColor = UIColor.white
         addSubviews()
     }
     

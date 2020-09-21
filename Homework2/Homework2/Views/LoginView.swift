@@ -21,6 +21,7 @@ class LoginView: UIView {
        let label = UILabel()
         label.text = "Need to sign in to continue"
         label.textColor = UIColor.white
+        label.font = .boldSystemFont(ofSize: 20)
         label.frame = CGRect(x: 40, y: 60, width: UIScreen.main.bounds.width, height: 30)
        return label
     } ()
@@ -53,7 +54,7 @@ class LoginView: UIView {
     private let loginButton: UIButton = {
         let button = UIButton()
         button.frame = CGRect(x: UIScreen.main.bounds.width * 0.5 + 10, y: 300, width: 100, height: 60)
-        button.backgroundColor = UIColor.red
+        button.backgroundColor = UIColor.blue
         button.setTitle("Log In", for: .normal)
         button.layer.cornerRadius = 10
         button.addTarget(self, action: #selector(loginClicked), for: .touchUpInside)
@@ -81,7 +82,7 @@ class LoginView: UIView {
     }
     
     private func setupStyle() {
-        backgroundColor = UIColor.systemYellow
+        backgroundColor = UIColor.white
         addSubviews()
     }
     
