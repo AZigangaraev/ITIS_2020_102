@@ -13,23 +13,24 @@ protocol LoginDelegate: AnyObject {
     func loginViewIsHidden()
 }
 
-class RegistrationClass: UIView {
+class LoginViewClass: UIView {
 
     @IBOutlet weak var LoginInButton: UIButton!
-    @IBOutlet weak var loginT: UILabel!
+
     
+    @IBOutlet weak var loginTextField: UITextField!
     @IBOutlet weak var NoAccLabel: UILabel!
     @IBOutlet weak var signUpButton: UIButton!
-    @IBOutlet weak var passwordT: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
      weak var delegateLogin: LoginDelegate?
     
     @IBAction func loginInButton(_ sender: Any) {
-        delegateLogin?.correct(login: loginT.text!, password: passwordT.text!)
+        delegateLogin?.correct(login: loginTextField.text!, password: passwordTextField.text!)
     }
     
     @IBAction func signUpButton(_ sender: Any) {
         delegateLogin?.loginViewIsHidden()
-        NoAccLabel.isHidden = true
+        
    }
     
 }

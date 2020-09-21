@@ -7,26 +7,27 @@
 //
 
 import UIKit
-protocol registrationViewDelegate: AnyObject{
+protocol RegistrationViewDelegate: AnyObject{
     func registration(login: String, password: String)
     func registrationViewIsHidden()
 }
-class ThisIsRegistrationView: UIView {
 
-    @IBOutlet weak var passwordT: UITextField!
+class RegistrationViewClass: UIView {
     
-    @IBOutlet weak var loginT: UITextField!
+    weak var registrationDelegate: RegistrationViewDelegate?
+
+    @IBOutlet weak var passwordTextField: UITextField!
+    
+    @IBOutlet weak var loginTextField: UITextField!
     // @IBAction func signInButton(_ sender: Any) {
    // }
     @IBOutlet weak var alreadyLabel: UILabel!
-    @IBOutlet weak var confirmT: UITextField!
-    @IBAction func registrationButton(_ sender: Any) {
-        registrationDelegate?.registrationViewIsHidden()
-    }
+    @IBOutlet weak var confirmTextField: UITextField!
+    //weak var registrationDelegate:registrationViewDelegate?
     
     @IBAction func signUpButton(_ sender: Any) {
-        if(passwordT.text == confirmT.text){
-            registrationDelegate?.registration(login: loginT.text!, password: passwordT.text!)
+        if(passwordTextField.text == confirmTextField.text){
+            registrationDelegate?.registration(login: loginTextField.text!, password: passwordTextField.text!)
                       registrationDelegate?.registrationViewIsHidden()
             
         } else {
@@ -35,9 +36,7 @@ class ThisIsRegistrationView: UIView {
     }
     @IBAction func signInButton(_ sender: Any) {
         registrationDelegate?.registrationViewIsHidden()
-        alreadyLabel.isHidden = true
-        
+                
     }
-    weak var registrationDelegate: registrationViewDelegate?
     
 }
