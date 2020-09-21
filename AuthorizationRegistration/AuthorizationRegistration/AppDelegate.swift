@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  MySecondProject
+//  AuthorizationRegistration
 //
-//  Created by Amir Zigangaraev on 14.09.2020.
-//  Copyright © 2020 Amir Zigangaraev. All rights reserved.
+//  Created by Руслан Ахмадеев on 21.09.2020.
+//  Copyright © 2020 Ruslan Akhmadeev. All rights reserved.
 //
 
 import UIKit
