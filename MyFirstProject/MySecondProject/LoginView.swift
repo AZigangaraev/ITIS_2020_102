@@ -9,10 +9,11 @@
 import UIKit
 
 class LoginView: UIView {
-    lazy var loginLabel = UILabel(frame: getDimension(row: 0))
-    lazy var login = UITextField(frame: getDimension(row: 1))
-    lazy var passwordLabel = UILabel(frame: getDimension(row: 2))
-    lazy var password = UITextField(frame: getDimension(row: 3))
+    lazy var statusLabel = UILabel(frame: getDimension(row: 0))
+    lazy var loginLabel = UILabel(frame: getDimension(row: 1))
+    lazy var login = UITextField(frame: getDimension(row: 2))
+    lazy var passwordLabel = UILabel(frame: getDimension(row: 3))
+    lazy var password = UITextField(frame: getDimension(row: 4))
 
     private var elementSpacing = 10
 
@@ -23,9 +24,12 @@ class LoginView: UIView {
     }
 
     func setup() {
+        statusLabel.text = "Please Sign In"
+        statusLabel.textAlignment = .center
+        
         password.isSecureTextEntry = true
         login.autocapitalizationType = .none
-
+        
         [login, password].forEach {
             $0.backgroundColor = UIColor.white.withAlphaComponent(0.75)
             self.addSubview($0)
@@ -34,7 +38,7 @@ class LoginView: UIView {
         loginLabel.text = "Login"
         passwordLabel.text = "Password"
 
-        [loginLabel, passwordLabel].forEach {
+        [loginLabel, passwordLabel, statusLabel].forEach {
             self.addSubview($0)
         }
     }
@@ -50,10 +54,22 @@ class LoginView: UIView {
 
     func signIn() -> Bool {
         guard let userLogin = login.text, let userPass = password.text else {
+            loginLabel.textColor = .green
+            loginLabel.text = "Please fill data"
             return false
         }
+        
+        let result = (userPass == users[userLogin])
+        
+        if (result) {
+            statusLabel.textColor = .green
+            statusLabel.text = "Sign in successful"
+        } else {
+            statusLabel.textColor = .red
+            statusLabel.text = "Sign in failed"
+        }
 
-        return userPass == users[userLogin]
+        return result
     }
 
     required init?(coder: NSCoder) {
