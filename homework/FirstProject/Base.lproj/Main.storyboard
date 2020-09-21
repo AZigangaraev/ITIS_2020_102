@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Auth View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="AuthViewController" id="BYZ-38-t0r" customClass="AuthViewController" customModule="FirstProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Registration" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0HN-jG-p7H">
+                                <rect key="frame" x="98" y="248" width="218" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AppleSymbols" family="Apple Symbols" pointSize="40"/>
+                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Uxg-Mo-6zk">
+                                <rect key="frame" x="43" y="367" width="328" height="34"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="0.74427440068493156" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="AppleSymbols" family="Apple Symbols" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WjI-5d-z6S">
+                                <rect key="frame" x="43" y="494" width="328" height="34"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="0.74427440069999995" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="AppleSymbols" family="Apple Symbols" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" returnKeyType="done" secureTextEntry="YES" textContentType="password"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="00D-7J-aqF">
+                                <rect key="frame" x="43" y="431" width="328" height="34"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="0.74427440069999995" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="AppleSymbols" family="Apple Symbols" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" returnKeyType="done" secureTextEntry="YES" textContentType="password"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Already signed up?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vko-gx-KiK">
+                                <rect key="frame" x="113" y="606" width="189" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="AppleSymbols" family="Apple Symbols" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8PR-Dn-R2b">
+                                <rect key="frame" x="162" y="658" width="95" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AppleSymbols" family="Apple Symbols" pointSize="29"/>
+                                <state key="normal" title="Sign In"/>
+                                <connections>
+                                    <action selector="loginSwitch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AMY-vl-BxD"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tff-1E-2Vo">
+                                <rect key="frame" x="58" y="138" width="287" height="102"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Need to sign in to continue" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QbY-jQ-sOA">
+                                        <rect key="frame" x="10" y="15" width="266" height="79"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="AppleSymbols" family="Apple Symbols" pointSize="25"/>
+                                        <color key="textColor" red="0.33011296391487122" green="0.0717463418841362" blue="0.11333461850881577" alpha="0.9990234375" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.57252132889999996" green="0.56862592700000003" blue="0.56863272190000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vhz-Hs-HoD">
+                                <rect key="frame" x="58" y="547" width="303" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.57045853140000002" green="0.57047235969999999" blue="0.57046490910000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
+                                <state key="normal" title="Sign Up">
+                                    <color key="titleColor" red="0.98895758390426636" green="0.93056565523147583" blue="0.020694104954600334" alpha="0.73311750856164382" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="signUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w7M-VL-rM2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="askLabel" destination="Vko-gx-KiK" id="wZD-7J-hKF"/>
+                        <outlet property="checkVIew" destination="Tff-1E-2Vo" id="fHH-CL-yNi"/>
+                        <outlet property="checkingLabel" destination="QbY-jQ-sOA" id="Yom-h5-ET9"/>
+                        <outlet property="enterButton" destination="8PR-Dn-R2b" id="ymP-bT-MJG"/>
+                        <outlet property="passwordConfField" destination="WjI-5d-z6S" id="d3U-ce-gc0"/>
+                        <outlet property="passwordField" destination="00D-7J-aqF" id="iuK-GP-0GN"/>
+                        <outlet property="signupButton" destination="vhz-Hs-HoD" id="GbP-Fq-kke"/>
+                        <outlet property="titleLabel" destination="0HN-jG-p7H" id="9we-8Z-fyr"/>
+                        <outlet property="usernameFIeld" destination="Uxg-Mo-6zk" id="idu-u7-2OQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="114.50892857142857"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" red="0.93880194425582886" green="0.97093385457992554" blue="0.91415661573410034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+</document>
